@@ -1,0 +1,30 @@
+@mixin transform($val) {
+    -webkit-transform: $val;
+     -moz-transform: $val;
+      -o-transform: $val;
+       -ms-transform: $val;
+        transform: $val;
+}
+
+@mixin transition($val) {
+	-webkit-transition: $val;
+     -moz-transition: $val;
+      -o-transition: $val;
+       -ms-transition: $val;
+        transition: $val;
+}
+
+@mixin box-sizing($val) {
+  -webkit-box-sizing: $val;
+    -moz-box-sizing: $val;
+      -o-box-sizing: $val;
+        box-sizing: $val;
+}
+
+@mixin perspective($val) {
+  -webkit-perspective: $val;
+     -moz-perspective: $val;
+      -o-perspective: $val;
+       -ms-perspective: $val;
+        perspective: $val;
+}

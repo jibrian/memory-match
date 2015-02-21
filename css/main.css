@@ -1,0 +1,200 @@
+@font-face {
+  font-family: 'action-comics';
+  src: url("../fonts/action-comics.ttf"); }
+@font-face {
+  font-family: 'action-comics-black';
+  src: url("../fonts/action-comics-black.ttf"); }
+html,
+body {
+  -webkit-transform: translateZ(0deg);
+  -moz-transform: translateZ(0deg);
+  -o-transform: translateZ(0deg);
+  -ms-transform: translateZ(0deg);
+  transform: translateZ(0deg); }
+
+body {
+  background: url("../images/bg-pattern.png");
+  background-size: 15px 15px;
+  background-repeat: repeat;
+  background-color: #FFB2B2;
+  font-family: 'action-comics';
+  text-transform: uppercase; }
+
+/* STRUCTURE */
+#memory-match {
+  margin: 0 auto;
+  padding: 0px;
+  width: 1100px; }
+
+#main-header {
+  text-align: center;
+  letter-spacing: 5px; }
+  #main-header > * {
+    display: inline-block;
+    vertical-align: middle; }
+
+#main-sidebar {
+  float: left;
+  padding: 10px;
+  width: 200px;
+  line-height: 29px; }
+
+#cards-container {
+  float: right;
+  font-size: 0;
+  width: 885px; }
+
+footer#shout-out {
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin: 60px auto;
+  text-align: center;
+  width: 1100px; }
+
+/* BUTTONS, OPTIONS */
+#difficulty-option p {
+  margin: 0;
+  padding: 10px; }
+#difficulty-option select {
+  border-radius: 0; }
+
+.button {
+  background: #00c2f1;
+  border: 3px solid;
+  line-height: 35px;
+  -webkit-transition: 0.65s ease;
+  -moz-transition: 0.65s ease;
+  -o-transition: 0.65s ease;
+  -ms-transition: 0.65s ease;
+  transition: 0.65s ease; }
+
+/* STATS */
+#time-stat {
+  text-transform: lowercase; }
+
+.stats {
+  font-family: 'action-comics-black'; }
+
+/* INDIVIDUAL CARD */
+.card-wrapper {
+  display: inline-block;
+  margin: 10px;
+  width: 126px;
+  height: 195.93px;
+  -webkit-transition: 0.65s ease;
+  -moz-transition: 0.65s ease;
+  -o-transition: 0.65s ease;
+  -ms-transition: 0.65s ease;
+  transition: 0.65s ease;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  -o-perspective: 1500px;
+  -ms-perspective: 1500px;
+  perspective: 1500px; }
+
+.card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+  .card img {
+    height: 100%;
+    width: 100%; }
+
+.card-front {
+  backface-visibility: hidden;
+  z-index: 99;
+  -webkit-transition: 0.65s;
+  -moz-transition: 0.65s;
+  -o-transition: 0.65s;
+  -ms-transition: 0.65s;
+  transition: 0.65s;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
+
+.card-back {
+  -webkit-transition: 0.65s;
+  -moz-transition: 0.65s;
+  -o-transition: 0.65s;
+  -ms-transition: 0.65s;
+  transition: 0.65s;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.flipped .card-front {
+  -webkit-transition: 0.65s;
+  -moz-transition: 0.65s;
+  -o-transition: 0.65s;
+  -ms-transition: 0.65s;
+  transition: 0.65s;
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg); }
+
+.flipped .card-back {
+  -webkit-transition: 0.65s;
+  -moz-transition: 0.65s;
+  -o-transition: 0.65s;
+  -ms-transition: 0.65s;
+  transition: 0.65s;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
+
+/* MISC */
+.x-ray {
+  opacity: 0.5; }
+
+.comic-layout {
+  border: 3px solid;
+  background: white;
+  margin: 3px; }
+
+.inward {
+  box-sizing: border-box; }
+
+.dead {
+  background: red; }
+
+/* TEXT */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 15px 0;
+  padding: 7px; }
+
+h3 {
+  border-bottom: 3px solid; }
+
+/* clearfix */
+#memory-match:before,
+#memory-match:after {
+  content: '';
+  display: table; }
+
+#memory-match:after {
+  clear: both; }
+
+a:after,
+a:active,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: red; }
+
+/*# sourceMappingURL=main.css.map */

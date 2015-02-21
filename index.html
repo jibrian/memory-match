@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='css/main.css' />
+</head>
+<body>
+	<div id='memory-match'>
+		<header id='main-header' class='comic-layout inward'>
+			<div id='header-logo'><h1>Super Memory</h1></div>
+			<p id='reset-button' class='button'>Start</p>
+			<div id='difficulty-option' class='options'>
+				<p>Difficulty</p>
+				<select id='difficulty' name='Difficulty'>
+					<option>Sidekick</option>
+					<option selected='selected'>Hero</option>
+					<option>Superhero</option>
+				</select>
+			</div>
+		</header>
+		<div id='main-sidebar' class='comic-layout inward'>
+			<h3>Stats</h3>
+			<h4>Time</h4>
+			<p id='time-stat' class='stats'>0m 0s</p>
+			<h4>Tries</h4>
+			<p id='tries-stat' class='stats'>0</p>
+			<h4>Accuracy</h4>
+			<p id='accuracy-stat' class='stats'>100%</p>
+			<h3>Powers</h3>
+			<p id='x-ray-button' class='button'>X-Ray</p>
+			<p id='smash-button' class='button'>Smash</p>
+		</div>
+		<div id='cards-container' class='comic-layout inward'></div>
+	</div>
+	<footer id='shout-out' class='comic-layout'>
+		<p>Shout out to <a href='http://thelincdesign.deviantart.com/' target='_blank'>Calvin Lin</a> for creating these awesome superhero illustrations. Don't sue me.</p>
+	</footer>
+
+	<script id='batman-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper batman' data-id='batman'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/batman.jpg' alt='batman' />
+			</div>
+		</div>
+	</script>
+	<script id='captainamerica-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper captainamerica' data-id='captainamerica'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/captainamerica.jpg' alt='Captain America' />
+			</div>
+		</div>
+	</script>
+	<script id='flash-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper flash' data-id='flash'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/flash.jpg' alt='Flash' />
+			</div>
+		</div>
+	</script>
+	<script id='greenlantern-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper greenlantern' data-id='greenlantern'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/greenlantern.jpg' alt='Green Lantern' />
+			</div>
+		</div>
+	</script>
+	<script id='ironman-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper ironman' data-id='ironman'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/ironman.jpg' alt='Green Lantern' />
+			</div>
+		</div>
+	</script>
+	<script id='robin-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper robin' data-id='robin'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/robin.jpg' alt='Robin' />
+			</div>
+		</div>
+	</script>
+	<script id='spiderman-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper spiderman' data-id='spiderman'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/spiderman.jpg' alt='Spiderman' />
+			</div>
+		</div>
+	</script>
+	<script id='superman-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper superman' data-id='superman'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/superman.jpg' alt='Superman' />
+			</div>
+		</div>
+	</script>
+	<script id='wolverine-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper wolverine' data-id='wolverine'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/wolverine.jpg' alt='Wolverine' />
+			</div>
+		</div>
+	</script>
+	<script id='wonderwoman-tmpl' class='card-template' type='text/template'>
+		<div class='card-wrapper wonderwoman' data-id='wonderwoman'>
+			<div class='card-front card'>
+				<img src='images/card-front.png' alt='Card Front' />
+			</div>
+			<div class='card-back card'>
+				<img src='images/wonderwoman.jpg' alt='Wonder Woman' />
+			</div>
+		</div>
+	</script>
+<script src='scripts/manipulatr.js'></script>
+<script src='scripts/main.js'></script>
+</body>
+</html>
